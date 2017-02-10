@@ -85,6 +85,7 @@ li {
  */
 h1, h2, h3, h4, h5, h6 {
   font-weight: $base-font-weight;
+  color: #4a4a4a; 
 }
 
 
@@ -95,13 +96,15 @@ h1, h2, h3, h4, h5, h6 {
 a {
   color: $brand-color;
   text-decoration: none;
+  transition: 0.3s; 
 
   &:visited {
-    color: darken($brand-color, 15%);
+    color: darken($brand-color, 20%);
+    text-decoration: none; 
   }
 
   &:hover {
-    color: $text-color;
+    color: darken($brand-color, 20%);
     text-decoration: underline;
   }
 }
@@ -166,7 +169,7 @@ pre {
   padding-left: $spacing-unit;
   @extend %clearfix;
 
-  @include media-query($on-laptop) {
+  @include media-query($on-medium) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
     padding-right: $spacing-unit / 2;
