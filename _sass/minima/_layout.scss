@@ -92,10 +92,11 @@
   padding: $spacing-unit 0;
 }
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: $spacing-unit / 2;
+.footer-text {
+  font-family: $sans-font-family;
+  font-size: 10px; 
 }
+
 
 .social-media-list {
   list-style: none;
@@ -115,13 +116,22 @@
   background-color: white;
 }
 
+.project-footer-col, 
 .footer-col {
   float: left;
-  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+ 
+}
+
+.project-footer-col-1, 
+.footer-col-1 {
+   width: -webkit-calc(50% - (#{$spacing-unit} / 2));
   width:         calc(50% - (#{$spacing-unit} / 2));
 }
 
+.project-footer-col-2, 
 .footer-col-2 {
+  width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+  width:         calc(50% - (#{$spacing-unit} / 2));
   text-align: right; 
 }
 
