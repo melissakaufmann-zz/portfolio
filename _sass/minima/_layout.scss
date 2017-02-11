@@ -112,6 +112,7 @@
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
+  background-color: white;
 }
 
 .footer-col {
@@ -259,6 +260,14 @@ div.callout figure > figcaption {
   top: 0; 
   border-top: 1px solid #e4e4e4;
   width: $spacing-unit *2; 
+}
+
+.link-project-nav {
+  color: $brand-color;
+  font-family: $sans-font-family; 
+  font-size: 13px; 
+  text-transform: uppercase;
+  margin-bottom: $spacing-unit; 
 }
 
 .btn-spacing {
