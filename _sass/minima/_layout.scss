@@ -146,6 +146,62 @@
 }
 
 
+/** Home Page **/
+
+.portfolio-projects {
+  margin-top: $spacing-unit *2;
+  margin-left: 10%; 
+  margin-right: 10%; 
+}
+
+.grid-col {
+  float: left;
+  margin-right: $spacing-unit;
+  margin-bottom: $spacing-unit; 
+  width: -webkit-calc(33.33% - (#{$spacing-unit*2} / 3));
+  width:         calc(33.33% - (#{$spacing-unit*2} / 3));
+
+  @include media-query(960px) {
+  width: -webkit-calc(50% - (#{$spacing-unit*2} / 2));
+  width:         calc(50% - (#{$spacing-unit*2} / 2));
+  }
+
+  @include media-query($on-small) {
+  width: 100%;
+  
+  }
+}
+
+
+.grid-col:nth-child(3n) {
+  margin-right: 0; 
+}
+
+ @include media-query(960px) {
+    .grid-col:nth-child(3n){
+      margin-right: $spacing-unit;
+    }
+  }
+
+.hover-fade {
+  opacity: 1; 
+
+  &:hover {
+  opacity: .5; 
+  }
+}
+
+.grid-caption {
+  font-family: $sans-font-family;
+  font-size: 11px; 
+  text-align: center; 
+  text-transform: uppercase; 
+  margin-top: 12px; 
+  color: $grey-color-dark; 
+  letter-spacing: .05em; 
+}
+
+
 /** Project Pages **/
 
 
