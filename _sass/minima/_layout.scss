@@ -22,6 +22,7 @@
 .site-nav {
   float: right;
   line-height: 72px;
+  z-index: 5000;
 
   .menu-icon {
     display: none;
@@ -334,6 +335,10 @@ div.callout figure > figcaption {
   font-size: 13px; 
   text-transform: uppercase;
   margin-bottom: $spacing-unit; 
+}
+
+.link-right {
+  text-align: right;
 }
 
 .btn-spacing {
